@@ -1,0 +1,11 @@
+using BFS...
+
+statistics: probA03.bwp method BFS planlen 3 iters 73 maxq 91
+statistics: probA04.bwp method BFS planlen 4 iters 86 maxq 113
+statistics: probA05.bwp method BFS planlen 5 iters 255 maxq 260
+statistics: probA06.bwp method BFS planlen 6 iters 414 maxq 350
+statistics: probA07.bwp method BFS planlen 7 iters 980 maxq 540
+statistics: probA08.bwp method BFS planlen 8 iters 1303 maxq 595
+statistics: probA09.bwp method BFS planlen 9 iters 1800 maxq 646
+statistics: probA10.bwp method BFS planlen 10 iters 2461 maxq 646
+statistics: probA11.bwp method BFS planlen 11 iters 2347 maxq 602
