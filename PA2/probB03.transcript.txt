@@ -1,0 +1,26 @@
+Solution found:
+DEHIJ
+G
+B
+AC
+F
+-----
+DEHIJ
+GB
+
+AC
+F
+-----
+DEHIJ
+GB
+C
+A
+F
+-----
+DEHIJF
+GB
+C
+A
+
+-----
+statistics: probB03.bwp method Astar planlen 3 iters 180 maxq 1325

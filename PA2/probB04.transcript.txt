@@ -1,0 +1,32 @@
+Solution found:
+AEG
+C
+FJ
+BDI
+H
+-----
+AEG
+CJ
+F
+BDI
+H
+-----
+AE
+CJ
+FG
+BDI
+H
+-----
+AEI
+CJ
+FG
+BD
+H
+-----
+AEI
+CJ
+FGH
+BD
+
+-----
+statistics: probB04.bwp method Astar planlen 4 iters 984 maxq 6994

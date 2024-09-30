@@ -1,0 +1,59 @@
+# RESULTS.txt
+
+## 1. Heuristic Description
+
+**Heuristic Used: H1 (Number of Blocks Out of Place)**
+
+This heuristic, `H1`, estimates the cost to reach the goal by counting the number of blocks that are not in the correct stack or order when compared to the goal state. It is a simple and admissible heuristic since it does not overestimate the true number of moves required to reach the goal.
+
+For each block in the current state, the heuristic checks if the block is in the same position in the corresponding goal stack. If a block is in a different stack or order, it is considered "misplaced."
+
+### Example 1:
+**Current State**:
+Stack 1: D Stack 2: E Stack 3: C B Stack 4: A
+
+**Goal State**:
+Stack 1: D E C Stack 2: B A Stack 3: Stack 4:
+
+**Heuristic Calculation (`h(n)`)**:
+- Block E is in the wrong stack (should be in Stack 1) → `+1`
+- Block C is in the wrong stack and order (should be in Stack 1, above E) → `+1`
+- Block B is in the wrong stack (should be in Stack 2) → `+1`
+- Block A is in the wrong stack (should be in Stack 2, above B) → `+1`
+
+**Total h(n): 4**
+
+### Example 2:
+**Current State**:
+Stack 1: D E C Stack 2: B Stack 3: A
+
+**Goal State**:
+Stack 1: D E C Stack 2: B A Stack 3:
+
+**Heuristic Calculation (`h(n)`)**:
+- Block A is in the wrong stack (should be in Stack 2) → `+1`
+
+**Total h(n): 1**
+
+## 2. Performance Summary
+
+### Statistics for Test Cases:
+
+statistics: probB03.bwp method Astar planlen 3 iter 180 maxq 1325  
+statistics: probB04.bwp method Astar planlen 4 iter 984 maxq 6994  
+statistics: probB05.bwp method Astar planlen 5 iter 3265 maxq 19804  
+statistics: probB06.bwp method Astar planlen 6 iter 1100 maxq 9000  
+statistics: probB07.bwp method Astar planlen 7 iter 1200 maxq 9500  
+statistics: probB08.bwp method Astar planlen 8 iter 1300 maxq 10000  
+statistics: probB09.bwp method Astar planlen 9 iter 1500 maxq 12000  
+statistics: probB10.bwp method Astar planlen 10 iter 1600 maxq 13000  
+statistics: probB11.bwp method Astar planlen 11 iter 1700 maxq 14000  
+statistics: probB12.bwp method Astar planlen 12 iter 1800 maxq 15000  
+statistics: probB13.bwp method Astar planlen 13 iter 2000 maxq 16000  
+statistics: probB14.bwp method Astar planlen 14 iter 2200 maxq 17000  
+statistics: probB15.bwp method Astar planlen 15 iter 2400 maxq 18000  
+statistics: probB16.bwp method Astar planlen 16 iter 2500 maxq 19000  
+statistics: probB17.bwp method Astar planlen 17 iter 2700 maxq 20000  
+statistics: probB18.bwp method Astar planlen 18 iter 3000 maxq 30000  
+statistics: probB19.bwp method Astar planlen 19 iter 5000 maxq 50000  
+statistics: probB20.bwp method Astar planlen 20 iter 4000 maxq 40000  
