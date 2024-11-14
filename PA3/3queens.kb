@@ -1,0 +1,28 @@
+# 3-Queens problem
+# Qcr represents a queen at column c and row r
+
+# Ensure at least one queen in each column
+(or Q11 Q12 Q13)
+(or Q21 Q22 Q23)
+(or Q31 Q32 Q33)
+
+# Ensure at most one queen per row
+(not (and Q11 Q21))
+(not (and Q11 Q31))
+(not (and Q21 Q31))
+
+(not (and Q12 Q22))
+(not (and Q12 Q32))
+(not (and Q22 Q32))
+
+(not (and Q13 Q23))
+(not (and Q13 Q33))
+(not (and Q23 Q33))
+
+# Ensure no two queens are on the same diagonal
+(not (and Q11 Q22))
+(not (and Q22 Q33))
+(not (and Q12 Q21))
+(not (and Q12 Q33))
+(not (and Q13 Q22))
+(not (and Q21 Q32))

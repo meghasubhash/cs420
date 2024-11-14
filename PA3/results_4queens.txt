@@ -1,0 +1,35 @@
+Command-line arguments: ['DPLL.py', '4queens.cnf']
+Choice-point assignment: Q11 = True
+Choice-point assignment: Q12 = True
+Choice-point assignment: Q13 = True
+Assigning Q14 due to unit-clause heuristic.
+Choice-point assignment: Q21 = True
+Choice-point assignment: Q22 = True
+Choice-point assignment: Q23 = True
+Assigning Q24 due to unit-clause heuristic.
+Choice-point assignment: Q31 = True
+Choice-point assignment: Q32 = True
+Choice-point assignment: Q33 = True
+Assigning Q34 due to unit-clause heuristic.
+Choice-point assignment: Q41 = True
+Choice-point assignment: Q42 = True
+Choice-point assignment: Q43 = True
+Assigning Q44 due to unit-clause heuristic.
+Choice-point assignment: -Q11 = True
+Assigning -Q21 due to unit-clause heuristic.
+Assigning -Q31 due to unit-clause heuristic.
+Backtracking on -Q11
+Backtracking on Q43
+Backtracking on Q42
+Backtracking on Q41
+Backtracking on Q33
+Backtracking on Q32
+Backtracking on Q31
+Backtracking on Q23
+Backtracking on Q22
+Backtracking on Q21
+Backtracking on Q13
+Backtracking on Q12
+Backtracking on Q11
+SATISFIABLE
+Total DPLL calls: 33

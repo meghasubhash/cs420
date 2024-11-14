@@ -1,0 +1,23 @@
+---------------------------------------------------------
+| Command Line Inputs            | Model Output           | DPLL Calls |
+---------------------------------------------------------
+| DPLL.py 3queens.cnf            | UNSATISFIABLE          | 20         |
+| DPLL.py 4queens.cnf            | SATISFIABLE:           | 33         |
+|                                | Q11, Q14, Q21, Q24,   |            |
+|                                | Q31, Q34, Q41, Q44    |            |
+| DPLL.py 5queens.cnf            | SATISFIABLE:           | 50         |
+|                                | Q11, Q15, Q21, Q25,   |            |
+|                                | Q31, Q35, Q41, Q45,   |            |
+|                                | Q51, Q55              |            |
+| DPLL.py 6queens.cnf            | SATISFIABLE:           | 71         |
+|                                | Q11, Q16, Q21, Q26,   |            |
+|                                | Q31, Q36, Q41, Q46,   |            |
+|                                | Q51, Q56, Q61, Q66    |            |
+| DPLL.py mapcolor.cnf           | SATISFIABLE            | 39         |
+| DPLL.py mapcolor.cnf QG VB VG  | UNSATISFIABLE          | 43         |
+| DPLL.py mapcolor.cnf -QR       | SATISFIABLE            | 80         |
+| DPLL.py sammy.cnf O1Y O2W O3Y  | UNSATISFIABLE          | 29         |
+| L1W L2Y L3B                    |                        |            |
+| DPLL.py sammy.cnf O1W O2Y O3W  | UNSATISFIABLE          | 29         |
+| L1W L2B L3B                    |                        |            |
+---------------------------------------------------------

@@ -1,0 +1,31 @@
+Command-line arguments: ['DPLL.py', 'sammy.cnf', 'O1Y', 'O2W', 'O3Y', 'L1W', 'L2Y', 'L3B']
+Assigning O1Y due to unit-clause heuristic.
+Assigning O2W due to unit-clause heuristic.
+Assigning O3Y due to unit-clause heuristic.
+Assigning L1W due to unit-clause heuristic.
+Assigning L2Y due to unit-clause heuristic.
+Assigning L3B due to unit-clause heuristic.
+Choice-point assignment: -O1Y = True
+Choice-point assignment: C1Y = True
+Assigning C1B due to unit-clause heuristic.
+Assigning C1W due to unit-clause heuristic.
+Choice-point assignment: -O2W = True
+Choice-point assignment: C2W = True
+Assigning C2B due to unit-clause heuristic.
+Assigning C2Y due to unit-clause heuristic.
+Choice-point assignment: -O3Y = True
+Choice-point assignment: C3Y = True
+Assigning C3B due to unit-clause heuristic.
+Assigning C3W due to unit-clause heuristic.
+Choice-point assignment: -L1W = True
+Assigning -C1W due to unit-clause heuristic.
+Assigning -C1Y due to unit-clause heuristic.
+Backtracking on -L1W
+Backtracking on C3Y
+Backtracking on -O3Y
+Backtracking on C2W
+Backtracking on -O2W
+Backtracking on C1Y
+Backtracking on -O1Y
+UNSATISFIABLE
+Total DPLL calls: 29

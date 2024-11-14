@@ -1,0 +1,45 @@
+Command-line arguments: ['DPLL.py', 'mapcolor.cnf', 'QG', 'VB', 'VG']
+Assigning QG due to unit-clause heuristic.
+Assigning VB due to unit-clause heuristic.
+Assigning VG due to unit-clause heuristic.
+Choice-point assignment: WA_R = True
+Choice-point assignment: WA_G = True
+Assigning WA_B due to unit-clause heuristic.
+Choice-point assignment: NT_R = True
+Choice-point assignment: NT_G = True
+Assigning NT_B due to unit-clause heuristic.
+Choice-point assignment: Q_R = True
+Choice-point assignment: Q_G = True
+Assigning Q_B due to unit-clause heuristic.
+Choice-point assignment: SA_R = True
+Choice-point assignment: SA_G = True
+Assigning SA_B due to unit-clause heuristic.
+Choice-point assignment: NSW_R = True
+Choice-point assignment: NSW_G = True
+Assigning NSW_B due to unit-clause heuristic.
+Choice-point assignment: V_R = True
+Choice-point assignment: V_G = True
+Assigning V_B due to unit-clause heuristic.
+Choice-point assignment: T_R = True
+Choice-point assignment: T_G = True
+Assigning T_B due to unit-clause heuristic.
+Choice-point assignment: -WA_R = True
+Assigning -NT_R due to unit-clause heuristic.
+Assigning -SA_R due to unit-clause heuristic.
+Backtracking on -WA_R
+Backtracking on T_G
+Backtracking on T_R
+Backtracking on V_G
+Backtracking on V_R
+Backtracking on NSW_G
+Backtracking on NSW_R
+Backtracking on SA_G
+Backtracking on SA_R
+Backtracking on Q_G
+Backtracking on Q_R
+Backtracking on NT_G
+Backtracking on NT_R
+Backtracking on WA_G
+Backtracking on WA_R
+UNSATISFIABLE
+Total DPLL calls: 43

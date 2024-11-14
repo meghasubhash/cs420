@@ -1,0 +1,36 @@
+# Sammy's Sport Shop - General Knowledge Base Rules
+# O1Y: Observed ball from Box 1 is Yellow
+# O2W: Observed ball from Box 2 is White
+# O3Y: Observed ball from Box 3 is Yellow
+# L1W: Label on Box 1 indicates White
+# L2Y: Label on Box 2 indicates Yellow
+# L3B: Label on Box 3 indicates Both
+# C1W, C1Y, C1B, etc.: Contents of Box 1 (White, Yellow, Both), similar for other boxes
+
+# Rules relating observed ball color to box contents (example rules)
+(implies O1Y (or C1Y C1B))  # If the observed ball from Box 1 is Yellow, Box 1 contains Yellow or Both
+(implies O2W (or C2W C2B))  # If the observed ball from Box 2 is White, Box 2 contains White or Both
+(implies O3Y (or C3Y C3B))  # If the observed ball from Box 3 is Yellow, Box 3 contains Yellow or Both
+
+# Rules relating labels to the actual contents (assuming incorrect labeling)
+(implies L1W (not C1W))  # If Box 1 is labeled White, it cannot contain only White
+(implies L2Y (not C2Y))  # If Box 2 is labeled Yellow, it cannot contain only Yellow
+(implies L3B (not C3B))  # If Box 3 is labeled Both, it cannot contain only Both
+
+# Additional rules for box contents (constraints on contents)
+(or C1W C1Y C1B)  # Box 1 must contain either White, Yellow, or Both
+(or C2W C2Y C2B)  # Box 2 must contain either White, Yellow, or Both
+(or C3W C3Y C3B)  # Box 3 must contain either White, Yellow, or Both
+
+# Ensuring exclusive contents (a box cannot contain two conflicting contents)
+(not (and C1W C1Y))
+(not (and C1W C1B))
+(not (and C1Y C1B))
+
+(not (and C2W C2Y))
+(not (and C2W C2B))
+(not (and C2Y C2B))
+
+(not (and C3W C3Y))
+(not (and C3W C3B))
+(not (and C3Y C3B))

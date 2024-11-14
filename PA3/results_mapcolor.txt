@@ -1,0 +1,42 @@
+Command-line arguments: ['DPLL.py', 'mapcolor.cnf']
+Choice-point assignment: WA_R = True
+Choice-point assignment: WA_G = True
+Assigning WA_B due to unit-clause heuristic.
+Choice-point assignment: NT_R = True
+Choice-point assignment: NT_G = True
+Assigning NT_B due to unit-clause heuristic.
+Choice-point assignment: Q_R = True
+Choice-point assignment: Q_G = True
+Assigning Q_B due to unit-clause heuristic.
+Choice-point assignment: SA_R = True
+Choice-point assignment: SA_G = True
+Assigning SA_B due to unit-clause heuristic.
+Choice-point assignment: NSW_R = True
+Choice-point assignment: NSW_G = True
+Assigning NSW_B due to unit-clause heuristic.
+Choice-point assignment: V_R = True
+Choice-point assignment: V_G = True
+Assigning V_B due to unit-clause heuristic.
+Choice-point assignment: T_R = True
+Choice-point assignment: T_G = True
+Assigning T_B due to unit-clause heuristic.
+Choice-point assignment: -WA_R = True
+Assigning -NT_R due to unit-clause heuristic.
+Assigning -SA_R due to unit-clause heuristic.
+Assigning -Q_R due to unit-clause heuristic.
+Assigning -NSW_R due to unit-clause heuristic.
+Assigning -V_R due to unit-clause heuristic.
+Choice-point assignment: -WA_G = True
+Assigning -NT_G due to unit-clause heuristic.
+Assigning -SA_G due to unit-clause heuristic.
+Assigning -Q_G due to unit-clause heuristic.
+Assigning -NSW_G due to unit-clause heuristic.
+Assigning -V_G due to unit-clause heuristic.
+Choice-point assignment: -WA_B = True
+Assigning -NT_B due to unit-clause heuristic.
+Assigning -SA_B due to unit-clause heuristic.
+Assigning -Q_B due to unit-clause heuristic.
+Assigning -NSW_B due to unit-clause heuristic.
+SATISFIABLE
+Model: {'WA_R': 1, 'WA_G': 1, 'WA_B': 1, 'NT_R': 1, 'NT_G': 1, 'NT_B': 1, 'Q_R': 1, 'Q_G': 1, 'Q_B': 1, 'SA_R': 1, 'SA_G': 1, 'SA_B': 1, 'NSW_R': 1, 'NSW_G': 1, 'NSW_B': 1, 'V_R': 1, 'V_G': 1, 'V_B': 1, 'T_R': 1, 'T_G': 1, 'T_B': 1, '-WA_R': 1, '-NT_R': 1, '-SA_R': 1, '-Q_R': 1, '-NSW_R': 1, '-V_R': 1, '-WA_G': 1, '-NT_G': 1, '-SA_G': 1, '-Q_G': 1, '-NSW_G': 1, '-V_G': 1, '-WA_B': 1, '-NT_B': 1, '-SA_B': 1, '-Q_B': 1, '-NSW_B': 1}
+Total DPLL calls: 39

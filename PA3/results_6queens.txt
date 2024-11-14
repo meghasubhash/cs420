@@ -1,0 +1,73 @@
+Command-line arguments: ['DPLL.py', '6queens.cnf']
+Choice-point assignment: Q11 = True
+Choice-point assignment: Q12 = True
+Choice-point assignment: Q13 = True
+Choice-point assignment: Q14 = True
+Choice-point assignment: Q15 = True
+Assigning Q16 due to unit-clause heuristic.
+Choice-point assignment: Q21 = True
+Choice-point assignment: Q22 = True
+Choice-point assignment: Q23 = True
+Choice-point assignment: Q24 = True
+Choice-point assignment: Q25 = True
+Assigning Q26 due to unit-clause heuristic.
+Choice-point assignment: Q31 = True
+Choice-point assignment: Q32 = True
+Choice-point assignment: Q33 = True
+Choice-point assignment: Q34 = True
+Choice-point assignment: Q35 = True
+Assigning Q36 due to unit-clause heuristic.
+Choice-point assignment: Q41 = True
+Choice-point assignment: Q42 = True
+Choice-point assignment: Q43 = True
+Choice-point assignment: Q44 = True
+Choice-point assignment: Q45 = True
+Assigning Q46 due to unit-clause heuristic.
+Choice-point assignment: Q51 = True
+Choice-point assignment: Q52 = True
+Choice-point assignment: Q53 = True
+Choice-point assignment: Q54 = True
+Choice-point assignment: Q55 = True
+Assigning Q56 due to unit-clause heuristic.
+Choice-point assignment: Q61 = True
+Choice-point assignment: Q62 = True
+Choice-point assignment: Q63 = True
+Choice-point assignment: Q64 = True
+Choice-point assignment: Q65 = True
+Assigning Q66 due to unit-clause heuristic.
+Choice-point assignment: -Q11 = True
+Assigning -Q21 due to unit-clause heuristic.
+Assigning -Q31 due to unit-clause heuristic.
+Backtracking on -Q11
+Backtracking on Q65
+Backtracking on Q64
+Backtracking on Q63
+Backtracking on Q62
+Backtracking on Q61
+Backtracking on Q55
+Backtracking on Q54
+Backtracking on Q53
+Backtracking on Q52
+Backtracking on Q51
+Backtracking on Q45
+Backtracking on Q44
+Backtracking on Q43
+Backtracking on Q42
+Backtracking on Q41
+Backtracking on Q35
+Backtracking on Q34
+Backtracking on Q33
+Backtracking on Q32
+Backtracking on Q31
+Backtracking on Q25
+Backtracking on Q24
+Backtracking on Q23
+Backtracking on Q22
+Backtracking on Q21
+Backtracking on Q15
+Backtracking on Q14
+Backtracking on Q13
+Backtracking on Q12
+Backtracking on Q11
+SATISFIABLE
+Total DPLL calls: 71

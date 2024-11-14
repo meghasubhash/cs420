@@ -1,0 +1,64 @@
+# 4-Queens problem
+# Qcr represents a queen at column c and row r
+
+# Ensure at least one queen in each column
+(or Q11 Q12 Q13 Q14)
+(or Q21 Q22 Q23 Q24)
+(or Q31 Q32 Q33 Q34)
+(or Q41 Q42 Q43 Q44)
+
+# Ensure at most one queen per row
+(not (and Q11 Q21))
+(not (and Q11 Q31))
+(not (and Q11 Q41))
+(not (and Q21 Q31))
+(not (and Q21 Q41))
+(not (and Q31 Q41))
+
+(not (and Q12 Q22))
+(not (and Q12 Q32))
+(not (and Q12 Q42))
+(not (and Q22 Q32))
+(not (and Q22 Q42))
+(not (and Q32 Q42))
+
+(not (and Q13 Q23))
+(not (and Q13 Q33))
+(not (and Q13 Q43))
+(not (and Q23 Q33))
+(not (and Q23 Q43))
+(not (and Q33 Q43))
+
+(not (and Q14 Q24))
+(not (and Q14 Q34))
+(not (and Q14 Q44))
+(not (and Q24 Q34))
+(not (and Q24 Q44))
+(not (and Q34 Q44))
+
+# Ensure no two queens are on the same diagonal
+(not (and Q11 Q22))
+(not (and Q22 Q33))
+(not (and Q33 Q44))
+
+(not (and Q12 Q21))
+(not (and Q12 Q23))
+(not (and Q23 Q34))
+
+(not (and Q13 Q22))
+(not (and Q22 Q31))
+
+(not (and Q14 Q23))
+(not (and Q23 Q32))
+
+(not (and Q13 Q24))
+(not (and Q12 Q33))
+(not (and Q11 Q34))
+
+(not (and Q24 Q33))
+(not (and Q33 Q42))
+(not (and Q42 Q31))
+
+(not (and Q44 Q33))
+(not (and Q33 Q22))
+(not (and Q22 Q11))

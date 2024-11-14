@@ -1,0 +1,198 @@
+# # 6-Queens problem
+# # Qcr represents a queen at column c and row r
+# 
+# # Ensure at least one queen in each column
+# (or Q11 Q12 Q13 Q14 Q15 Q16)
+
+Q11 Q12 Q13 Q14 Q15 Q16
+
+# (or Q21 Q22 Q23 Q24 Q25 Q26)
+
+Q21 Q22 Q23 Q24 Q25 Q26
+
+# (or Q31 Q32 Q33 Q34 Q35 Q36)
+
+Q31 Q32 Q33 Q34 Q35 Q36
+
+# (or Q41 Q42 Q43 Q44 Q45 Q46)
+
+Q41 Q42 Q43 Q44 Q45 Q46
+
+# (or Q51 Q52 Q53 Q54 Q55 Q56)
+
+Q51 Q52 Q53 Q54 Q55 Q56
+
+# (or Q61 Q62 Q63 Q64 Q65 Q66)
+
+Q61 Q62 Q63 Q64 Q65 Q66
+
+# 
+# # Ensure at most one queen per row
+# (not (and Q11 Q21)) (not (and Q11 Q31)) (not (and Q11 Q41)) (not (and Q11 Q51)) (not (and Q11 Q61))
+
+-Q11 -Q21
+
+# (not (and Q21 Q31)) (not (and Q21 Q41)) (not (and Q21 Q51)) (not (and Q21 Q61))
+
+-Q21 -Q31
+
+# (not (and Q31 Q41)) (not (and Q31 Q51)) (not (and Q31 Q61))
+
+-Q31 -Q41
+
+# (not (and Q41 Q51)) (not (and Q41 Q61))
+
+-Q41 -Q51
+
+# (not (and Q51 Q61))
+
+-Q51 -Q61
+
+# 
+# (not (and Q12 Q22)) (not (and Q12 Q32)) (not (and Q12 Q42)) (not (and Q12 Q52)) (not (and Q12 Q62))
+
+-Q12 -Q22
+
+# (not (and Q22 Q32)) (not (and Q22 Q42)) (not (and Q22 Q52)) (not (and Q22 Q62))
+
+-Q22 -Q32
+
+# (not (and Q32 Q42)) (not (and Q32 Q52)) (not (and Q32 Q62))
+
+-Q32 -Q42
+
+# (not (and Q42 Q52)) (not (and Q42 Q62))
+
+-Q42 -Q52
+
+# (not (and Q52 Q62))
+
+-Q52 -Q62
+
+# 
+# (not (and Q13 Q23)) (not (and Q13 Q33)) (not (and Q13 Q43)) (not (and Q13 Q53)) (not (and Q13 Q63))
+
+-Q13 -Q23
+
+# (not (and Q23 Q33)) (not (and Q23 Q43)) (not (and Q23 Q53)) (not (and Q23 Q63))
+
+-Q23 -Q33
+
+# (not (and Q33 Q43)) (not (and Q33 Q53)) (not (and Q33 Q63))
+
+-Q33 -Q43
+
+# (not (and Q43 Q53)) (not (and Q43 Q63))
+
+-Q43 -Q53
+
+# (not (and Q53 Q63))
+
+-Q53 -Q63
+
+# 
+# (not (and Q14 Q24)) (not (and Q14 Q34)) (not (and Q14 Q44)) (not (and Q14 Q54)) (not (and Q14 Q64))
+
+-Q14 -Q24
+
+# (not (and Q24 Q34)) (not (and Q24 Q44)) (not (and Q24 Q54)) (not (and Q24 Q64))
+
+-Q24 -Q34
+
+# (not (and Q34 Q44)) (not (and Q34 Q54)) (not (and Q34 Q64))
+
+-Q34 -Q44
+
+# (not (and Q44 Q54)) (not (and Q44 Q64))
+
+-Q44 -Q54
+
+# (not (and Q54 Q64))
+
+-Q54 -Q64
+
+# 
+# (not (and Q15 Q25)) (not (and Q15 Q35)) (not (and Q15 Q45)) (not (and Q15 Q55)) (not (and Q15 Q65))
+
+-Q15 -Q25
+
+# (not (and Q25 Q35)) (not (and Q25 Q45)) (not (and Q25 Q55)) (not (and Q25 Q65))
+
+-Q25 -Q35
+
+# (not (and Q35 Q45)) (not (and Q35 Q55)) (not (and Q35 Q65))
+
+-Q35 -Q45
+
+# (not (and Q45 Q55)) (not (and Q45 Q65))
+
+-Q45 -Q55
+
+# (not (and Q55 Q65))
+
+-Q55 -Q65
+
+# 
+# (not (and Q16 Q26)) (not (and Q16 Q36)) (not (and Q16 Q46)) (not (and Q16 Q56)) (not (and Q16 Q66))
+
+-Q16 -Q26
+
+# (not (and Q26 Q36)) (not (and Q26 Q46)) (not (and Q26 Q56)) (not (and Q26 Q66))
+
+-Q26 -Q36
+
+# (not (and Q36 Q46)) (not (and Q36 Q56)) (not (and Q36 Q66))
+
+-Q36 -Q46
+
+# (not (and Q46 Q56)) (not (and Q46 Q66))
+
+-Q46 -Q56
+
+# (not (and Q56 Q66))
+
+-Q56 -Q66
+
+# 
+# # Ensure no two queens are on the same diagonal
+# (not (and Q11 Q22)) (not (and Q22 Q33)) (not (and Q33 Q44)) (not (and Q44 Q55)) (not (and Q55 Q66))
+
+-Q11 -Q22
+
+# (not (and Q12 Q23)) (not (and Q23 Q34)) (not (and Q34 Q45)) (not (and Q45 Q56))
+
+-Q12 -Q23
+
+# (not (and Q13 Q24)) (not (and Q24 Q35)) (not (and Q35 Q46))
+
+-Q13 -Q24
+
+# (not (and Q14 Q25)) (not (and Q25 Q36))
+
+-Q14 -Q25
+
+# (not (and Q15 Q26))
+
+-Q15 -Q26
+
+# 
+# (not (and Q21 Q12)) (not (and Q31 Q22)) (not (and Q41 Q32)) (not (and Q51 Q42)) (not (and Q61 Q52))
+
+-Q21 -Q12
+
+# (not (and Q22 Q13)) (not (and Q32 Q23)) (not (and Q42 Q33)) (not (and Q52 Q43))
+
+-Q22 -Q13
+
+# (not (and Q23 Q14)) (not (and Q33 Q24)) (not (and Q43 Q34))
+
+-Q23 -Q14
+
+# (not (and Q24 Q15)) (not (and Q34 Q25))
+
+-Q24 -Q15
+
+# (not (and Q25 Q16))
+
+-Q25 -Q16
+

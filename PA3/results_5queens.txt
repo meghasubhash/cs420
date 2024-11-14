@@ -1,0 +1,52 @@
+Command-line arguments: ['DPLL.py', '5queens.cnf']
+Choice-point assignment: Q11 = True
+Choice-point assignment: Q12 = True
+Choice-point assignment: Q13 = True
+Choice-point assignment: Q14 = True
+Assigning Q15 due to unit-clause heuristic.
+Choice-point assignment: Q21 = True
+Choice-point assignment: Q22 = True
+Choice-point assignment: Q23 = True
+Choice-point assignment: Q24 = True
+Assigning Q25 due to unit-clause heuristic.
+Choice-point assignment: Q31 = True
+Choice-point assignment: Q32 = True
+Choice-point assignment: Q33 = True
+Choice-point assignment: Q34 = True
+Assigning Q35 due to unit-clause heuristic.
+Choice-point assignment: Q41 = True
+Choice-point assignment: Q42 = True
+Choice-point assignment: Q43 = True
+Choice-point assignment: Q44 = True
+Assigning Q45 due to unit-clause heuristic.
+Choice-point assignment: Q51 = True
+Choice-point assignment: Q52 = True
+Choice-point assignment: Q53 = True
+Choice-point assignment: Q54 = True
+Assigning Q55 due to unit-clause heuristic.
+Choice-point assignment: -Q11 = True
+Assigning -Q21 due to unit-clause heuristic.
+Assigning -Q31 due to unit-clause heuristic.
+Backtracking on -Q11
+Backtracking on Q54
+Backtracking on Q53
+Backtracking on Q52
+Backtracking on Q51
+Backtracking on Q44
+Backtracking on Q43
+Backtracking on Q42
+Backtracking on Q41
+Backtracking on Q34
+Backtracking on Q33
+Backtracking on Q32
+Backtracking on Q31
+Backtracking on Q24
+Backtracking on Q23
+Backtracking on Q22
+Backtracking on Q21
+Backtracking on Q14
+Backtracking on Q13
+Backtracking on Q12
+Backtracking on Q11
+SATISFIABLE
+Total DPLL calls: 50

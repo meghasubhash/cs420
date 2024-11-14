@@ -1,0 +1,161 @@
+# # Map-coloring problem for Australia
+# # Variables represent states/territories and their possible colors (Red (R), Green (G), Blue (B))
+# 
+# # Each state must be assigned one of the three colors (Red, Green, Blue)
+# (or WA_R WA_G WA_B)
+
+WA_R WA_G WA_B
+
+# (or NT_R NT_G NT_B)
+
+NT_R NT_G NT_B
+
+# (or Q_R Q_G Q_B)
+
+Q_R Q_G Q_B
+
+# (or SA_R SA_G SA_B)
+
+SA_R SA_G SA_B
+
+# (or NSW_R NSW_G NSW_B)
+
+NSW_R NSW_G NSW_B
+
+# (or V_R V_G V_B)
+
+V_R V_G V_B
+
+# (or T_R T_G T_B)
+
+T_R T_G T_B
+
+# 
+# # Constraints to ensure neighboring regions do not have the same color
+# # Western Australia (WA) and Northern Territory (NT) should not have the same color
+# (not (and WA_R NT_R))
+
+-WA_R -NT_R
+
+# (not (and WA_G NT_G))
+
+-WA_G -NT_G
+
+# (not (and WA_B NT_B))
+
+-WA_B -NT_B
+
+# 
+# # Western Australia (WA) and South Australia (SA) should not have the same color
+# (not (and WA_R SA_R))
+
+-WA_R -SA_R
+
+# (not (and WA_G SA_G))
+
+-WA_G -SA_G
+
+# (not (and WA_B SA_B))
+
+-WA_B -SA_B
+
+# 
+# # Northern Territory (NT) and Queensland (Q) should not have the same color
+# (not (and NT_R Q_R))
+
+-NT_R -Q_R
+
+# (not (and NT_G Q_G))
+
+-NT_G -Q_G
+
+# (not (and NT_B Q_B))
+
+-NT_B -Q_B
+
+# 
+# # Northern Territory (NT) and South Australia (SA) should not have the same color
+# (not (and NT_R SA_R))
+
+-NT_R -SA_R
+
+# (not (and NT_G SA_G))
+
+-NT_G -SA_G
+
+# (not (and NT_B SA_B))
+
+-NT_B -SA_B
+
+# 
+# # Queensland (Q) and South Australia (SA) should not have the same color
+# (not (and Q_R SA_R))
+
+-Q_R -SA_R
+
+# (not (and Q_G SA_G))
+
+-Q_G -SA_G
+
+# (not (and Q_B SA_B))
+
+-Q_B -SA_B
+
+# 
+# # Queensland (Q) and New South Wales (NSW) should not have the same color
+# (not (and Q_R NSW_R))
+
+-Q_R -NSW_R
+
+# (not (and Q_G NSW_G))
+
+-Q_G -NSW_G
+
+# (not (and Q_B NSW_B))
+
+-Q_B -NSW_B
+
+# 
+# # South Australia (SA) and New South Wales (NSW) should not have the same color
+# (not (and SA_R NSW_R))
+
+-SA_R -NSW_R
+
+# (not (and SA_G NSW_G))
+
+-SA_G -NSW_G
+
+# (not (and SA_B NSW_B))
+
+-SA_B -NSW_B
+
+# 
+# # South Australia (SA) and Victoria (V) should not have the same color
+# (not (and SA_R V_R))
+
+-SA_R -V_R
+
+# (not (and SA_G V_G))
+
+-SA_G -V_G
+
+# (not (and SA_B V_B))
+
+-SA_B -V_B
+
+# 
+# # New South Wales (NSW) and Victoria (V) should not have the same color
+# (not (and NSW_R V_R))
+
+-NSW_R -V_R
+
+# (not (and NSW_G V_G))
+
+-NSW_G -V_G
+
+# (not (and NSW_B V_B))
+
+-NSW_B -V_B
+
+# 
+# # Tasmania (T) is not connected to any other state, so no constraints are needed
